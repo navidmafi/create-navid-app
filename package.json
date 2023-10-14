@@ -1,6 +1,6 @@
 {
   "name": "create-navid-app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "create a next.js app ready for production out of the box",
   "scripts": {
     "dev": "next dev",
