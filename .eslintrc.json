@@ -2,11 +2,30 @@
   "globals": {
     "JSX": "readonly"
   },
-  "extends": "next/core-web-vitals",
+  "extends": ["next/core-web-vitals",
+    "eslint:recommended", "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": ["@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
+  "root": true,
   "rules": {
     "semi": [
       "error",
       "always"
+    ],
+    "@typescript-eslint/no-unused-vars" : "warn",
+    "@typescript-eslint/member-delimiter-style": [
+      "error",
+      {
+        "multiline": {
+          "delimiter": "semi",
+          "requireLast": true
+        },
+        "singleline": {
+          "delimiter": "semi",
+          "requireLast": false
+        }
+      }
     ],
     "no-mixed-operators": "error",
     "space-in-parens": "warn",
